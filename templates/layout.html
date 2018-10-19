@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% block head %}
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    <title>{% block title %}{% endblock %}</title>
+    {% endblock %}
+</head>
+<body>
+    <nav class="nav-bar-header">
+        <div class="nav-link"><a href="http://localhost:5000">Homepage</a></div>
+        <div class="nav-link"><a href="http://localhost:5000/about">About page</a></div>
+        <div class="nav-link"><a href="http://localhost:5000/coolpage">Cool Page</a></div>
+        <div class="nav-link"><a href="http://localhost:5000/contact">Contact</a></div>
+    </nav>
+    <div class="content">{% block content %} {% endblock %}</div>
+    <div class="initial-image">{% block image %} {% endblock %}</div>
+    <nav class="nav-bar-footer">
+        <div class="nav-link"><a href="http://localhost:5000">Homepage</a></div>
+        <div class="nav-link"><a href="http://localhost:5000/about">About page</a></div>
+        <div class="nav-link"><a href="http://localhost:5000/coolpage">Cool Page</a></div>
+        <div class="nav-link"><a href="http://localhost:5000/contact">Contact</a></div>
+    </nav>
+</body>
+</html>

@@ -1,9 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>My app</title>
-</head>
-<body>
-	<h1>Welcome to my flask app cool huh!!</h1>
-</body>
-</html>
+{% extends "layout.html"%}
+
+{% block title %} Homepage {% endblock %}
+
+{% block content %} 
+<h1>Welcome to my smoothie app</h1>
+{% endblock %}
+
+{% block image %} 
+    <img src="../static/images/easy-smoothie-recipes-1.jpg" alt="smoothie">
+{% endblock %}
